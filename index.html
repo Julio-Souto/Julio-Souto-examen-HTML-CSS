@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Julio Souto Examen HTML CSS</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="main-title">Formulario de contacto</h1>
+    <form action="#" class="main-form">
+      <fieldset class="hablemos">
+        <legend class="fieldset-title">Hablemos...</legend>
+        <div class="nombre">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Su nombre" required>
+          <span class="obligatorio">Campo obligatorio</span>
+        </div>
+        <div class="direccion">
+          <label for="direcccion">Direccion</label>
+          <input type="text" name="direcccion" placeholder="Su direccion" id="direcccion">
+        </div>
+        <div class="correo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" name="correo" id="correo" placeholder="Su email" required>
+          <span class="obligatorio">Campo obligatorio</span>
+        </div>
+        <div class="asunto">
+          <label for="asunto">Asunto</label>
+          <input type="text" name="asunto" id="asunto" placeholder="Motivo de contacto" required>
+          <span class="obligatorio">Campo obligatorio</span>
+        </div>
+        <div class="mensaje">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="2" placeholder="Su mensaje" required></textarea>
+          <span class="obligatorio">Campo obligatorio</span>
+        </div>
+      </fieldset>
+      <fieldset class="otros-datos">
+        <legend class="fieldset-title">Otros datos</legend>
+        <div class="contacto">
+          <label class="main-label" for="contacto-web"><strong>¿Cómo contacto por nosotros?</strong></label>
+          <input type="checkbox" name="contacto" id="contacto-web" value="web">
+          <label for="contacto-web">Web</label>
+          <input type="checkbox" name="contacto" id="contacto-amigos" value="amigos">
+          <label for="contacto-amigos">Amigos</label>
+          <input type="checkbox" name="contacto" id="contacto-prensa" value="prensa">
+          <label for="contacto-prensa">Prensa</label>
+          <input type="checkbox" name="contacto" id="contacto-otros" value="otros">
+          <label for="contacto-otros">Otros</label>
+        </div>
+        <div class="nacionalidad">
+          <label class="main-label" for="nacionalidad-si"><strong>¿Es usted español?</strong></label>
+          <input type="radio" name="nacionalidad" id="nacionalidad-si" value="si">
+          <label for="nacionalidad-si">Sí</label>
+          <input type="radio" name="nacionalidad" id="nacionalidad-no" value="no">
+          <label for="nacionalidad-no">No</label>
+        </div>
+        <div class="intereses">
+          <label class="main-label" for="intereses"><strong>Sus intereses</strong></label>
+          <select name="intereses" id="intereses" size="4" multiple>
+            <option value="deportes">Deportes</option>
+            <option value="naturaleza">Naturaleza</option>
+            <option value="informatica">Informática</option>
+            <option value="cine">Cine</option>
+            <option value="mascotas">Mascotas</option>
+          </select>
+        </div>
+      </fieldset>
+      <button class="enviar" id="enviar">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>

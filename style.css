@@ -1,0 +1,53 @@
+h1.main-title{
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  width: 80%;
+}
+fieldset{
+  border: none;
+}
+.fieldset-title{
+  font-size: 32px;
+  text-decoration: underline;
+}
+fieldset.hablemos div *, .main-label{
+  display: block;
+}
+fieldset div{
+  margin-top: .5em;
+}
+.nombre{
+  margin: 0;
+}
+.obligatorio{
+  color: red;
+}
+input[type="text"], textarea, input[type="email"]{
+  width: 100%;
+}
+input, select, textarea{
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+}
+.contacto{
+  margin: 0;
+}
+.enviar{
+  padding: .5em 1em;
+  font-family: 'Overpass', sans-serif;
+  background-color: grey;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 5em;
+}
